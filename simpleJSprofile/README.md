@@ -5,7 +5,7 @@ Makes use of the performance API if the browser is compatible otherwise uses sim
 
 For advanced benchmarking I would recommend the jsperf or Benchmark.js libraries.
 
-performance documentation 
+## Window.Performance Documentation: 
 
 https://developer.mozilla.org/en-US/docs/Web/API/Performance
 
