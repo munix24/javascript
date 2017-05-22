@@ -8,6 +8,7 @@ For advanced benchmarking I would recommend the jsperf or Benchmark.js libraries
 performance documentation 
 
 https://developer.mozilla.org/en-US/docs/Web/API/Performance
+
 https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
 
 ## Linking  Include simpleJSprofile.js in the page you want to profile: 
