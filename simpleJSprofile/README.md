@@ -11,7 +11,10 @@ https://developer.mozilla.org/en-US/docs/Web/API/Performance
 
 https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
 
-## Linking  Include simpleJSprofile.js in the page you want to profile: 
+## Linking
+
+Include simpleJSprofile.js in the page you want to profile: 
+
 <script src="simpleJSprofile.js"></script>
 
 ## Example Usage  
