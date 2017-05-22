@@ -6,6 +6,7 @@ Makes use of the performance API if the browser is compatible otherwise uses sim
 For advanced benchmarking I would recommend the jsperf or Benchmark.js libraries.
 
 performance documentation 
+
 https://developer.mozilla.org/en-US/docs/Web/API/Performance
 https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
 
@@ -14,30 +15,48 @@ https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
 
 ## Example Usage  
 ms=getRunMilliseconds(functionName);   
+
 console.log(ms); //console output milliseconds elapsed "2001.0002"
+
 printRunMilliseconds(functionName,['Hello ','World!']); //console output "Elapsed: 2001.0002 ms". add any parameters to functionName in second parameter as an array 
 
 ## Using Multiple Stopwatches  
 //Start 1st Stopwatch 
+
 var stopwatch1 = new StopWatch(); 
+
 //Do some work  
+
 //console output time 
-stopwatch1.printElapsedMilliseconds();   
+
+stopwatch1.printElapsedMilliseconds();  
+
 
 //Start 2nd Stopwatch 
+
 //variables are object specific so multiple StopWatches work with min space 
+
 var stopwatch2 = new StopWatch(); 
+
 //Do some more work  
 
+
 //Optionally you can stop both stopwatches for a more accurate reading 
+
 stopwatch1.stop(); 
+
 stopwatch2.stop(); 
 
+
 //console output time 
+
 stopwatch1.printElapsedMilliseconds();  
+
 stopwatch2.printElapsedMilliseconds();    
 
-You can format the output using 
+## Formatting Output
 stopwatch.printElapsed(type,floor);
+
 type=[ms, sec, min, hrs] //set output to milliseconds, seconds, minutes, or hours respectively 
+
 floor=[false, true] //whether or round return value to previous integer 
