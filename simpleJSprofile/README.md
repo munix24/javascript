@@ -1,5 +1,5 @@
 # simpleJSprofile.js
-Lightweight javascript library with no external JS dependencies that profiles time taken by a function. Used by web developers who want a quick glance at how quickly their javascript function runs. Tested with Firefox 52, IE11 and Chrome 58.
+Lightweight JavaScript library with no external JS dependencies that profiles time taken by a JavaScript function. Used by web developers who want a quick glance at how quickly a single function runs. Tested with Firefox 52, IE11 and Chrome 58.
 
 Makes use of the performance API if the browser is compatible otherwise uses simple system clock API. Unlike Date.now(), the values returned by Performance.now() always increase at a constant rate, independent of the system clock
 
@@ -13,20 +13,29 @@ https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
 
 ## Linking
 
-Include simpleJSprofile.js in the page you want to profile: 
+Download and include simpleJSprofile.js in the html page you want to profile: 
 
-<script src="simpleJSprofile.js"></script>
+`<script src="simpleJSprofile.js"></script>`
+
+Alternatively you can load the library remotely using [rawgit](https://rawgit.com/) (don't use this in production):
+
+`<script type="text/javascript" src="https://cdn.rawgit.com/munix24/javascript/master/simpleJSprofile/simpleJSprofile.js"></script>`
 
 ## Example Usage  
+
+[JSFiddle example](https://jsfiddle.net/ab5vLb1k/)
+
 ms=getRunMilliseconds(functionName);   
 
-console.log(ms); //console output milliseconds elapsed "2001.0002"
+console.log(ms); //console output "Elapsed: 2001.0002 ms"
 
 //add any parameters to functionName in second parameter as an array 
 
-printRunMilliseconds(functionName,['Hello ','World!']); //console output "Elapsed: 2001.0002 ms". 
+consolePrintRunMs(functionName,['Hello ','World!']); //console output "Elapsed: 2001.0002 ms"
 
 ## Using Multiple Stopwatches  
+
+[JSFiddle example](https://jsfiddle.net/9t29bds0/)
 
 //Start 1st Stopwatch 
 
@@ -36,7 +45,7 @@ var stopwatch1 = new StopWatch(); 
 
 //console output time 
 
-stopwatch1.printElapsedMilliseconds();  
+stopwatch1.consolePrintElapsedMs();  
 
 //Start 2nd Stopwatch - variables are object specific so multiple StopWatches work with min space 
 
@@ -52,12 +61,19 @@ stopwatch2.stop(); 
 
 //console output time 
 
-stopwatch1.printElapsedMilliseconds();  
+stopwatch1.consolePrintElapsedMs();  
 
-stopwatch2.printElapsedMilliseconds();    
+stopwatch2.consolePrintElapsedMs();    
 
 ## Formatting Output
-stopwatch.printElapsed(type,floor);
+
+[JSFiddle example](https://jsfiddle.net/51ujfy04/)
+
+var stopwatch1 = new StopWatch(); 
+
+//Do some work
+
+stopwatch.consolePrintElapsed(type,floor);
 
 type=[ms, sec, min, hrs] //set output to milliseconds, seconds, minutes, or hours respectively 
 
