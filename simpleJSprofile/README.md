@@ -35,7 +35,7 @@ consolePrintRunMs(functionName,['Hello ','World!']); //Elapsed: 2001.0002 ms
 
 ## Using Multiple Stopwatches  
 
-[JSFiddle example](https://jsfiddle.net/pcc80rra/show/2/)
+[JSFiddle example](https://jsfiddle.net/x0srz4dg/show/)
 
 //Start 1st Stopwatch 
 
@@ -65,7 +65,7 @@ stopwatch2.consolePrintElapsedMs(); //Elapsed: 2001.0002 ms
 
 ## Formatting Output
 
-[JSFiddle example](https://jsfiddle.net/cantqr9h/show/2/)
+[JSFiddle example](https://jsfiddle.net/r04odhzv/show/)
 
 var stopwatch1 = new StopWatch(); 
 
