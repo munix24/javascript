@@ -23,7 +23,7 @@ Alternatively you can load the library remotely using [rawgit](https://rawgit.co
 
 ## Example Usage  
 
-[JSFiddle example](https://jsfiddle.net/ab5vLb1k/)
+[JSFiddle example](https://jsfiddle.net/ab5vLb1k/show/)
 
 ms=getRunMilliseconds(functionName);   
 
@@ -35,7 +35,7 @@ consolePrintRunMs(functionName,['Hello ','World!']); //Elapsed: 2001.0002 ms
 
 ## Using Multiple Stopwatches  
 
-[JSFiddle example](https://jsfiddle.net/9t29bds0/)
+[JSFiddle example](https://jsfiddle.net/9t29bds0/show/)
 
 //Start 1st Stopwatch 
 
@@ -65,7 +65,7 @@ stopwatch2.consolePrintElapsedMs(); //Elapsed: 2001.0002 ms
 
 ## Formatting Output
 
-[JSFiddle example](https://jsfiddle.net/51ujfy04/)
+[JSFiddle example](https://jsfiddle.net/51ujfy04/show/)
 
 var stopwatch1 = new StopWatch(); 
 
