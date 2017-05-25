@@ -21,7 +21,7 @@ StopWatch.prototype.getElapsedMilliseconds = function () {
     return this.stopTime - this.startTime;
 };
 
-StopWatch.prototype.printElapsedMilliseconds = function () {
+StopWatch.prototype.consolePrintElapsedMs = function () {
     console.log('Elapsed: ', this.getElapsedMilliseconds(),' ms');
 };
 
@@ -29,7 +29,7 @@ StopWatch.prototype.getRaw = function () {
 	return  currentTime()-this.startTime;
 };
 
-StopWatch.prototype.printRaw = function () {
+StopWatch.prototype.consolePrintRaw = function () {
 	console.log(currentTime()-this.startTime);
 };
 
@@ -52,7 +52,7 @@ StopWatch.prototype.getElapsed = function (type,floor) {
 	}
 };
 
-StopWatch.prototype.printElapsed = function (type,floor) {
+StopWatch.prototype.consolePrintElapsed = function (type,floor) {
 	type=(typeof type === 'undefined') ? 'ms' : type;
     console.log('Elapsed: ', this.getElapsed(type,floor),type);
 };
@@ -71,6 +71,6 @@ function getRunMilliseconds(callback, args){
 	}
 };
 
-function printRunMilliseconds(callback, args){
+function consolePrintRunMs(callback, args){
     console.log('Elapsed: ', getRunMilliseconds(callback, args),'ms');
 };
