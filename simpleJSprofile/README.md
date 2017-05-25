@@ -29,9 +29,9 @@ ms=getRunMilliseconds(functionName);   
 
 console.log(ms); //console output "Elapsed: 2001.0002 ms"
 
-//add any parameters to functionName in second parameter as an array 
+add parameters to function in second parameter as an array 
 
-consolePrintRunMs(functionName,['Hello ','World!']); //console output "Elapsed: 2001.0002 ms"
+consolePrintRunMs(functionName,['Hello ','World!']); //Elapsed: 2001.0002 ms
 
 ## Using Multiple Stopwatches  
 
@@ -43,11 +43,9 @@ var stopwatch1 = new StopWatch(); 
 
 //Do some work  
 
-//console output time 
+stopwatch1.consolePrintElapsedMs(); //Elapsed: 2001.0002 ms
 
-stopwatch1.consolePrintElapsedMs();  
-
-//Start 2nd Stopwatch - variables are object specific so multiple StopWatches work with min space 
+//Start 2nd Stopwatch - variables are object specific so multiple StopWatches work
 
 var stopwatch2 = new StopWatch(); 
 
@@ -61,9 +59,9 @@ stopwatch2.stop(); 
 
 //console output time 
 
-stopwatch1.consolePrintElapsedMs();  
+stopwatch1.consolePrintElapsedMs(); //Elapsed: 2001.0002 ms
 
-stopwatch2.consolePrintElapsedMs();    
+stopwatch2.consolePrintElapsedMs(); //Elapsed: 2001.0002 ms
 
 ## Formatting Output
 
